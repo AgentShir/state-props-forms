@@ -1,18 +1,22 @@
-<div className="container">
-        {this.state.vehicles.map(item => (
-          <div className="card" style={{width:'20rem'}}>
-            <div className="card-block">
+import React, { Component } from 'react';
 
-            <div className="wrapper" key={item.name}>
-                <div>User:{item.userName}</div>
-                <div>Artist/Band:{item.songArtist}</div>
-                <div>Title:{item.songTitle}</div>
-                <div>Notes:{item.songNotes}</div>
-            </div>
-            </div>
-          </div>
-      ))}
-</div>
+class PlayListItem extends Component {
+  constructor(props){
+    super(props)
+  }
 
+  render(){
+    return(
+      <div>
+        <ul>
+          <li>{this.props.songs.userName}</li>
+          <li>{this.props.songs.songArtist}</li>
+          <li>{this.props.songs.songTitle}</li>
+          <li>{this.props.songs.songNotes}</li>
+        </ul>
+      </div>
+    )
+  }
+}
 
 export default PlayListItem;
