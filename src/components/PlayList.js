@@ -35,7 +35,7 @@ render(){
   return (
     <div>
       {this.state.songs.map((item) => (
-        <PlayListItem songs={item}/>
+        <PlayListItem song1={item}/>
       ))}
     </div>
     )

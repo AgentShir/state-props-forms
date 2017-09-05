@@ -5,8 +5,8 @@ class NavBar extends Component {
     return (
       <div className="wrapper">
         <div className="container">
-          <div className="jumbotron">
-            <h2>Play What?!</h2>
+          <div className="jumbotron jumbotron-fluid text-white">
+            <h1>Play What?!</h1>
           </div>
         </div>
       </div>
